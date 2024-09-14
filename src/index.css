@@ -25,8 +25,7 @@ h1{
 
 nav{
   display: flex;
-  width: 80vw;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding: 1rem;
 }
 
@@ -70,14 +69,16 @@ form{
   margin: 0 auto;
 }
 
-.card{
+
+.card {
   display: flex;
-  justify-content: space-around;
   flex-direction: column;
   align-items: center;
-  width: 200px;
-  padding: 0.5rem 0.5rem 0 0.5rem;
-  border: 0.5px solid rgb(136, 136, 136);
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #fff;
+  border-radius: 8px;
 }
 
 .card:hover{
@@ -85,7 +86,7 @@ form{
 }
 
 .card-grid{
-  display: flex;
+  display: grid;
   justify-content: space-evenly;
   gap: 1rem;
   width: 90vw;
@@ -120,3 +121,24 @@ tr:nth-child(even) {
 .dark > a {
   color: white;
 }
+
+.home.light {
+  background-color: #fff;  /* Fondo claro */
+  color: #000;             /* Texto oscuro */
+}
+
+.home.dark {
+  background-color: #333;  /* Fondo oscuro */
+  color: #fff;             /* Texto claro */
+}
+
+.navbar-logo {
+  width: 100px; 
+  height: auto; 
+}
+
+.dentist-image {
+  width: 100px; 
+  height: auto; 
+}
+
